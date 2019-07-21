@@ -1,0 +1,145 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+.img-box {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	
+}
+.img-box2 {
+	position: absolute;
+	top: 0;
+	min-width: 0;
+	
+}
+.logo-img {
+	z-index: 0;
+	object-fit: cover;
+	
+}
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    opacity: 0.70;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* Setting it fixed created parallax */
+    background-attachment: fixed;
+}
+
+.pimg1{
+    background-image:url('../img/laptop.jpg');
+    min-height: 100%;
+}
+
+.pimg2{
+    background-image:url('../img/img2.jpeg');
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image:url('../img/img3.jpeg');
+    min-height: 400px;
+}
+
+.section {
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.section-light{
+    background-color: #f4f4f4;
+    color: #666
+}
+
+.section-dark{
+    background-color: #282e34;
+    color: #ddd
+}
+
+.ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+}
+
+.ptext .border {
+    background-color: #111;
+    color: #fff;
+    padding: 20px;
+}
+
+.ptext .border.trans{
+    background-color: transparent;
+}
+
+/*Amend some Bootstrap default values*/
+.navbar {
+	margin-top: 100px;
+}
+/*text colour for the brand/title text*/
+.navbar-dark .navbar-brand {
+	color: #b8e7ff;
+}
+/*text colour for the links on the navbar*/
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .active > .nav-link,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .nav-link.active {
+	color: #b8e7ff;
+}
+/*border colour for the 'burger' button of the collapsible nav menu*/
+.navbar-dark .navbar-toggler {
+	border-color: rgba(255, 255, 255, 0.7);
+}
+/*colour of the horizontal lines for the 'burger' button of the collapsible nav menu*/
+.navbar-dark .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+/*background colour for the navbar menu*/
+.bg-dark {
+	background-color: #015d8e !important;
+}
+
+/*background colour for the whole length of the navbar menu*/
+.navbar-inverse {
+  background-color: #015d8e;
+  border-color: #004c74; /*change border color from #015d8e to match bg-color of nav link for active page*/
+}
+/*text colour for the brand/title text on the collapsible nav menu*/
+.navbar-inverse .navbar-brand {
+  color: #b8e7ff;
+}
+/*text colour for all of the links on the collapsible nav menu*/
+.navbar-inverse .navbar-nav > li > a {
+  color: #b8e7ff;
+}
+/*text and background colour for the nav link of active/current page*/
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #fff;
+  background-color: #004c74;
+}
+/*border colour for button of the collapsible nav menu*/
+.navbar-inverse .navbar-toggle {
+  border-color: #00669c;
+}
+/*background colour for button of the collapsible nav menu*/
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #00669c;
+}
