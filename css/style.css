@@ -74,7 +74,6 @@ h2 {
 	padding-top: 90px;
 }
 .section {
-	/*create media query for small screen*/
 	min-height: 70%;
     padding: 50px 80px;
 }
@@ -216,6 +215,12 @@ h2 {
 	overflow: hidden;
 	padding: 0.5em 0;
 	background-color: transparent;
+	opacity: 0;	/*make the heading invisible initially*/
+	transition: opacity 350ms;
+}
+.hovereffect:hover h2 {
+	opacity: 1;	/*show the heading on hover*/
+	transition: opacity 350ms;
 }
 /*horizontal line effect*/
 .hovereffect h2:after {
@@ -255,6 +260,10 @@ h2 {
 }
 
 /*Skills / Education / Experience*/
+.progress-type {
+	padding-top: 4px;
+	font-weight: 400;
+}
 .timeline-item {
     padding: 4em 2em 0em 2em;
     position: relative;
@@ -270,7 +279,7 @@ h2 {
     content: attr(data-dates);
     position: absolute;
     left: 2.5em;
-    top: 2.5em;
+    top: 2.8em;
     display: block;
     font-family: , sans-serif;
     font-weight: ;
@@ -290,14 +299,14 @@ h2 {
     content: '';
     background: #fafafa;
 }
-h4 {
-	color: #b8e7ff;
-}
 .skills-items {
 	margin-bottom: 30px;
 }
 .history-items {
     margin-bottom: 40px;
+}
+h4 {
+	color: #b8e7ff;
 }
 
 /*Contact Form*/
