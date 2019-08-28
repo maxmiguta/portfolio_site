@@ -57,8 +57,8 @@ h2 {
 .pimg1 {
     background-image:url('../img/desk.jpg');
     min-height: 86%;
-	padding-top: 250px;
-	opacity: 0.80;
+    padding-top: 250px;
+    opacity: 0.80;
 }
 .pimg2 {
     background-image:url('../img/workspace.jpg');
@@ -71,10 +71,10 @@ h2 {
 .pimg4 {
     background-image:url('../img/edinburgh.jpg');
     min-height: 86%;
-	padding-top: 90px;
+    padding-top: 90px;
 }
 .section {
-	min-height: 70%;
+    min-height: 70%;
     padding: 50px 80px;
 }
 .section-light {
@@ -112,37 +112,20 @@ h2 {
     background-color: transparent;
 }
 
-/*Skills*/
-.progress-block {
-	margin-top: 20px;
-}
-.progress {
-    position: relative;
-    height: 25px;
-    margin-bottom: 10px;
-}
-.progress-type {
-    position: absolute;
-    left: 0px;
-    font-weight: bold;
-    padding-left: 10px;
-    color: #fff;
-}
-
 /*Max Miguta*/
 .main-heading {
-	text-align: center;
+    text-align: center;
     font-size: 66px;
     letter-spacing: 8px;
-	text-transform: uppercase;
-	text-shadow: 4px 4px 4px #757575;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 4px #757575;
 }
 .main-heading .border {
-	display: inline-block;
+    display: inline-block;
     color: #fff;
-	border: 0px none !important;
+    border: 0px none !important;
     padding: 20px;
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 /*improve display on smaller screens*/
 @media (min-width: 768px) and (max-width: 991px) {
@@ -161,7 +144,7 @@ h2 {
 
 /*Carousel*/
 .car-container {
-	margin: auto;
+    margin: auto;
     max-width: 768px;
 }
 
@@ -260,9 +243,27 @@ h2 {
 }
 
 /*Skills / Education / Experience*/
+.resume-block {
+    margin-top: 20px;
+}
+.skills-items {
+    margin-bottom: 30px;
+}
+.progress {
+    position: relative;
+    height: 25px;
+    margin-bottom: 10px;
+}
 .progress-type {
-	padding-top: 4px;
-	font-weight: 400;
+    position: absolute;
+    left: 0px;
+    padding-top: 4px;
+    padding-left: 10px;
+    font-weight: 400;
+    color: #fff;
+}
+.history-items {
+    margin-bottom: 40px;
 }
 .timeline-item {
     padding: 4em 2em 0em 2em;
@@ -299,14 +300,8 @@ h2 {
     content: '';
     background: #fafafa;
 }
-.skills-items {
-	margin-bottom: 30px;
-}
-.history-items {
-    margin-bottom: 40px;
-}
 h4 {
-	color: #b8e7ff;
+    color: #b8e7ff;
 }
 
 /*Contact Form*/
@@ -324,7 +319,7 @@ h4 {
 	margin-bottom: 40px;
 }
 .center-form {
-	padding-top: 20px;
+	padding: 20px 0;
     margin: auto;
     max-width: 70%;
 }
@@ -344,18 +339,34 @@ h4 {
 button[type="submit"] {
     margin-top: 15px;
     margin-bottom: 20px;
-    background-color: #00669c;
+    background-color: #0078b8;
     color: #fff;
+}
+.social-section {
+    padding-bottom: 40px;
+}
+/*amend default Font Awesome icon colours*/
+.fa-linkedin,
+.fa-github-square,
+.fa-file-download {
+    color: #0078b8;
+    transition: 350ms;
+}
+.fa-linkedin:hover,
+.fa-github-square:hover,
+.fa-file-download:hover {
+    color: #b1916b;
+    transition: 350ms;
 }
 
 /*Footer*/
 .main-footer {
-	height: 140px;
-	width: 100%;
-	background-color: #282e34;
-	color: #ddd;
-	text-align: center;
-	padding-top: 30px;
+    height: 140px;
+    width: 100%;
+    background-color: #282e34;
+    color: #ddd;
+    text-align: center;
+    padding-top: 30px;
 }
 
 /*Amend some Bootstrap default values*/
