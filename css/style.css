@@ -60,6 +60,12 @@ h2 {
     padding-top: 250px;
     opacity: 0.80;
 }
+@media (max-width: 575px) {
+	.pimg1 {
+		min-height: 80%;
+		padding-top: 160px;
+	}
+}
 .pimg2 {
     background-image:url('../img/workspace.jpg');
     min-height: 400px;
@@ -85,7 +91,7 @@ h2 {
     background-color: #282e34;
     color: #ddd;
 }
-@media (min-width: 360px) and (max-width: 575px) {
+@media (max-width: 575px) {
 	.section-light {
 		padding: 50px 20px;
 	}
@@ -133,9 +139,17 @@ h2 {
 		font-size: 58px;
 	}
 }
-@media (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
 	.main-heading {
 		font-size: 36px;
+	}
+	.carousel {
+		visibility: hidden;
+	}
+}
+@media (max-width: 575px) {
+	.main-heading {
+		font-size: 30px;
 	}
 	.carousel {
 		visibility: hidden;
@@ -240,6 +254,23 @@ h2 {
 	filter: alpha(opacity=100);
 	-webkit-transform: translate3d(0, 0, 0);
 	transform: translate3d(0, 0, 0);
+}
+@media (max-width: 575px) {
+	.overlay > h2 {
+		margin-bottom: 25px !important;
+	}
+	.hovereffect .overlay {
+		padding-top: 0px;
+	}
+	.hovereffect h2 {
+		top: 18%;
+		font-size: 20px;
+		line-height: 28px;
+	}
+	.hovereffect p {
+		top: 8%;
+		font-size: 18px;
+	}
 }
 
 /*Skills / Education / Experience*/
