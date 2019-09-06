@@ -17,10 +17,29 @@
 			emailjs.init("user_qJBP2xc5mt95iQW1Rq1zm");
 		})();
     </script>
+    <script type="text/javascript">
+        // Get the button
+		scrollbutton = document.getElementById("scrollBtn");
+		// When the user scrolls down 50px from the top of the page, show the button
+        window.onscroll = function() {scrollFunction()};
+		
+        function scrollFunction() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                scrollbutton.style.display = "block";
+            } else {
+                scrollbutton.style.display = "none";
+            }
+        }
+		// When the user clicks on the button, scroll to the top of the page
+        function scrollFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+    </script>
 </head>
 <body>
 	<div class="img-box">
-		<img class="logo-img" src="img/header_image2.jpg" alt="Logo">		
+		<img class="logo-img" src="img/header_image.jpg" alt="Logo">		
 	</div>
     <nav class="navbar navbar-expand-md navbar-dark bg-dark p-2">
         <div class="container-fluid">
@@ -30,10 +49,10 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active"><a class="nav-link" href="#introAnchor">Introduction <span class="sr-only">(current)</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="#portfolioAnchor">Portfolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#resumeAnchor">Resume</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contactAnchor">Contact</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#intro">Introduction <span class="sr-only">(current)</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -64,7 +83,7 @@
     <section class="section section-light">
         <h2 id="introAnchor" class="heading-margin">Introduction</h2>
         <p>Hey! I'm <strong>Max</strong>, a Full Stack Web Developer based in Edinburgh, Scotland. I'm focused on designing and developing beautiful, functional and user-friendly websites.</p>
-		<p>My background is in marketing and graphic design and so this experience allows me to approach each project with the bigger strategic picture<!--clear vision--> in mind and a well defined design idea.</p>
+		<p>My background is in marketing and graphic design and so this experience allows me to approach each project with the bigger strategic picture in mind and a well defined design idea.</p>
 		<p>I'm constantly looking to improve on my coding skills, to learn new languages and frameworks, and I consider it imperative to keep up with industry trends and advancements.</p>
         <p>After recently completing a two year course in Software Development I'm now ready to take on a Junior Web Developer role. As a freelancer, I'm also currently open to new web projects, so if you have a requirement for a bespoke website then I would be happy to hear from you!</p>
         <p>Keep scrolling to find out more about my technical skills and to see my project portfolio thus far. And if you have a particular project in mind and would like to discuss the requirements you can use the contact form at the bottom of the page to get in touch with me.</p>
@@ -265,6 +284,8 @@
 		<p>Copyright &copy; 2019</p>
 		<p>Website designed and built by Max Miguta</p>
 	</footer>
+	
+	<i onclick="gotoTop()" id="scrollBtn" class="fas fa-arrow-alt-circle-up fa-3x" title="Return to top"></i>
 
 <!-- Bootstrap core JS files -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>

@@ -400,6 +400,16 @@ button[type="submit"] {
     padding-top: 30px;
 }
 
+/*Return to top button*/
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 99;
+    cursor: pointer;
+}
+
 /*Amend some Bootstrap default values*/
 /*add a drop shadow to the navbar*/
 .navbar {
