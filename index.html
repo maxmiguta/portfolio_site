@@ -17,25 +17,6 @@
 			emailjs.init("user_qJBP2xc5mt95iQW1Rq1zm");
 		})();
     </script>
-    <script type="text/javascript">
-        // Get the button
-		scrollbutton = document.getElementById("scrollBtn");
-		// When the user scrolls down 50px from the top of the page, show the button
-        window.onscroll = function() {scrollFunction()};
-		
-        function scrollFunction() {
-            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                scrollbutton.style.display = "block";
-            } else {
-                scrollbutton.style.display = "none";
-            }
-        }
-		// When the user clicks on the button, scroll to the top of the page
-        function scrollFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-		}
-    </script>
 </head>
 <body>
 	<div class="img-box">
@@ -81,7 +62,7 @@
 		</div>
     </div>
     <section class="section section-light">
-        <h2 id="introAnchor" class="heading-margin">Introduction</h2>
+        <h2 id="intro" class="heading-margin">Introduction</h2>
         <p>Hey! I'm <strong>Max</strong>, a Full Stack Web Developer based in Edinburgh, Scotland. I'm focused on designing and developing beautiful, functional and user-friendly websites.</p>
 		<p>My background is in marketing and graphic design and so this experience allows me to approach each project with the bigger strategic picture in mind and a well defined design idea.</p>
 		<p>I'm constantly looking to improve on my coding skills, to learn new languages and frameworks, and I consider it imperative to keep up with industry trends and advancements.</p>
@@ -107,7 +88,7 @@
 	
     <section class="section section-light">
 		<div class="container-fluid">
-        <h2 id="portfolioAnchor">Past projects</h2>
+        <h2 id="portfolio">Past projects</h2>
         <p></p>
 		<div class="row">
 			<article class="img-margin col-md-6">
@@ -168,7 +149,7 @@
 	
     <section class="section section-light">
         <!--<div class="col-md-8 offset-md-2">-->
-		<h2 id="resumeAnchor">Skills</h2>
+		<h2 id="resume">Skills</h2>
 		<p>I have over 10 years combined experience in marketing, graphic and web design, as well as experience in the delivery process of a website from initial client specification through to completion and maintenance thereafter. In the last two and a half years I have gained skills in Front End and Back End Development through an online coding 'boot camp' provided by Code Institute and also other online resources, however I'm constantly looking to build on that knowledge.</p>
 		<p>Below is a summary of the main coding skills that I acquired or further built upon in the last two and a half years. It is by no means an exhaustive list.</p>
 		<p>&nbsp;</p>
@@ -259,7 +240,7 @@
     </section>
 
         <div class="pimg4">
-			<div id="contactAnchor" class="contact-heading">
+			<div id="contact" class="contact-heading">
 				<span class="border">
 					Contact
 				</span>
@@ -285,7 +266,7 @@
 		<p>Website designed and built by Max Miguta</p>
 	</footer>
 	
-	<i onclick="gotoTop()" id="scrollBtn" class="fas fa-arrow-alt-circle-up fa-3x" title="Return to top"></i>
+    <a id="scrollBtn"><i class="fas fa-arrow-alt-circle-up fa-3x" title="Return to top"></i></a>
 
 <!-- Bootstrap core JS files -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
@@ -293,5 +274,20 @@
 <script src="https://use.fontawesome.com/releases/v5.10.2/js/all.js"></script>
 <!-- Custom JS files -->
 <script src="js/sendEmail.js"></script>
+<script type="text/javascript">
+    // Get the button
+    const scrollbutton = document.querySelector('#scrollBtn');
+    const html = document.querySelector('html');
+    html.style.scrollBehavior = 'smooth';
+	
+    // When the user scrolls down 150px from the top of the page, show the button
+    window.addEventListener('scroll', () => {
+        scrollbutton.style.display =
+        window.scrollY > 150 ? 'block':'none';
+    });
+    
+    // When the user clicks on the button, scroll to the top of the page
+    scrollbutton.onclick = () => window.scrollTo(0,0);
+</script>
 </body>
 </html>
