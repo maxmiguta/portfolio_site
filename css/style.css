@@ -62,8 +62,14 @@ h2 {
 }
 @media (max-width: 575px) {
 	.pimg1 {
-		min-height: 80%;
+		min-height: 82%;
 		padding-top: 160px;
+	}
+}
+@media (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+	.pimg1 {
+		min-height: 84%;
+		padding-top: 250px;
 	}
 }
 .pimg2 {
@@ -337,35 +343,35 @@ h4 {
 
 /*Contact Form*/
 .contact-heading {
-	text-align: center;
+    text-align: center;
     font-size: 27px;
     letter-spacing: 8px;
-	text-transform: uppercase;
+    text-transform: uppercase;
 }
 .contact-heading .border {
-	display: inline-block;	/*need this so that the <span> is treated like a 'block' but at the same time doesn't stretch the full width of the page*/
-	background-color: #111;
+    display: inline-block;	/*need this so that the <span> is treated like a 'block' but at the same time doesn't stretch the full width of the page*/
+    background-color: #111;
     color: #fff;
     padding: 20px;
-	margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 .center-form {
-	padding: 20px 0;
+    padding: 20px 0;
     margin: auto;
     max-width: 70%;
 }
 @media (min-width: 360px) and (max-width: 575px) {
-	.center-form {
-		max-width: 90%;
-	}
+    .center-form {
+        max-width: 90%;
+    }
 }
 .center-form input,
 .center-form textarea {
-	padding: 10px;
-	margin: 10px 0;
-	max-width: 100%;
-	color: #fff;
-	background-color: #111;
+    padding: 10px;
+    margin: 10px 0;
+    max-width: 100%;
+    color: #fff;
+    background-color: #111;
 }
 button[type="submit"] {
     margin-top: 15px;
@@ -408,6 +414,12 @@ button[type="submit"] {
     right: 40px;
     z-index: 99;
     cursor: pointer;
+}
+@media (max-width: 575px) {
+    #scrollBtn {
+	    bottom: 20px;
+        right: 20px;
+    }
 }
 .fa-arrow-alt-circle-up {
     color: #4ca0cd;
