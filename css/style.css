@@ -45,7 +45,7 @@ h2 {
 	}
 }
 
-.pimg1, .pimg2, .pimg3, .pimg4 {
+.part1, .part2, .part3, .part4 {
     position: relative;
     opacity: 0.7;
     background-position: center;
@@ -54,33 +54,34 @@ h2 {
     /*setting it to fixed created parallax*/
     background-attachment: fixed;
 }
-.pimg1 {
+.part1 {
     background-image:url('../img/desk.jpg');
     min-height: 86%;
     padding-top: 250px;
     opacity: 0.8;
 }
 @media (max-width: 575px) {
-	.pimg1 {
-		min-height: 82%;
-		padding-top: 160px;
-	}
+    .part1 {
+	    min-height: 82%;
+	    padding-top: 160px;
+    }
 }
+/*for iPhone X screens*/
 @media (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
-	.pimg1 {
-		min-height: 84%;
-		padding-top: 250px;
-	}
+    .part1 {
+	    min-height: 84%;
+	    padding-top: 250px;
+    }
 }
-.pimg2 {
+.part2 {
     background-image:url('../img/workspace.jpg');
     min-height: 400px;
 }
-.pimg3 {
+.part3 {
     background-image:url('../img/img3.jpeg');
     min-height: 400px;
 }
-.pimg4 {
+.part4 {
     background-image:url('../img/edinburgh.jpg');
     min-height: 86%;
     padding-top: 90px;
@@ -98,12 +99,12 @@ h2 {
     color: #ddd;
 }
 @media (max-width: 575px) {
-	.section-light {
-		padding: 50px 20px;
-	}
-	.section-dark {
-		padding: 50px 40px;
-	}
+    .section-light {
+	    padding: 50px 20px;
+    }
+    .section-dark {
+	    padding: 50px 40px;
+    }
 }
 .ptext {
     position: absolute;
@@ -417,7 +418,7 @@ button[type="submit"] {
 }
 @media (max-width: 575px) {
     #scrollBtn {
-	    bottom: 20px;
+        bottom: 20px;
         right: 20px;
     }
 }
