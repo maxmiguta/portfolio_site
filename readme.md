@@ -14,7 +14,7 @@ The website offers users all the relevant information about me as a web develope
 
 ## Demo
 
-You can see the live website [here](http://www.maxmiguta.wsdomain.net/).
+You can see the live website [here](https://www.maxmiguta.com/).
 
 ## Features
 
